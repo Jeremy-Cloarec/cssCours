@@ -108,9 +108,7 @@ article{
 	
 }
 
-.texte p{
-	
-}
+
 
 .flex{
 	border: 2px solid #9B1212;
@@ -224,5 +222,101 @@ article{
 	flex-direction: column;
 	align-items: end;
 	height: 200px;
+}
+
+.containerflex16{
+	display: flex;
+	flex-direction: row;
+	height: 200px;
+}
+
+.containerflex16 .flex{
+	width: 500px;
+}
+.containerflex17{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: 200px;
+}
+
+.containerflex17 .flex{
+	width: 500px;
+}
+.containerflex18{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap-reverse;
+	height: 200px;
+}
+
+.containerflex18 .flex{
+	width: 500px;
+}
+.containerflex19{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	height: 200px;
+}
+
+.containerflex19 .flex{
+	height: 300px;
+}
+.containerflex20{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 200px;
+}
+
+.containerflex20 .flex{
+	height: 300px;
+}
+
+.containerflex21{
+	display: flex;
+	height: 200px;
+	
+	
+}
+
+
+.flex1, .flex2, .flex3, .flex4 {
+	border: 2px solid #9B1212;
+	color: #9B1212;
+	margin: 3px 3px;
+}
+
+.flex1{
+	flex-basis: auto;
+}
+
+.flex2 {
+	flex-basis: 50%;
+}
+.flex3 {
+	flex-basis: 80px;
+}
+
+#texte{
+	font-size: 0.75rem;
+}
+
+.flex11, .flex22, .flex33, .flex44 {
+	border: 2px solid #9B1212;
+	color: #9B1212;
+	margin: 3px 3px;
+}
+
+.flex11{
+	flex-grow: 1;
+}
+
+.flex22 {
+	flex-grow: 2;
+}
+.flex33 {
+	flex-grow: 0;
 }
 
