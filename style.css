@@ -453,13 +453,57 @@ article {
 	grid-template : 50px 1fr /150px 50px 1fr;
 }
 
+.containergrid6{
+	height: 200px;
+	display: grid;
+	grid-template : auto auto /auto auto;
+	row-gap:50px;  
+}
+.containergrid7{
+	height: 200px;
+	display: grid;
+	grid-template : auto auto /auto auto;
+	column-gap:50px;  
+}
 
+.containergrid8{
+	height: 200px;
+	display: grid;
+	grid-template : auto auto /auto auto;
+	gap:50px 10px;  
+}
 
+.containergrid9{
+	height: 200px;
+	display: grid;
+	grid-template : auto auto /auto auto;
+	gap:30px;  
+}
 
+.containergrid10{
+	height: 200px;
+	display: grid;
+	grid-template :auto auto auto /auto auto auto; 
+	gap:10px;  
+}
 
+.grid1, .grid2, .grid3, .grid4, .grid5, .grid5, .grid6{
+	border: 2px solid #9B1212;
+	color: #9B1212;
+	margin: 3px 3px;
+}
 
+.grid2{
+	grid-column:span 2;
+}
 
+.grid5{
+	grid-column:span 3;
+}
 
+.grid1{
+	grid-row:span 2;
+}
 
 
 
