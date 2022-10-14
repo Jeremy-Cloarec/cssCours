@@ -24,11 +24,11 @@ nav {
 	align-items: center;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 0 20px;
 }
 
 .navigation a {
 	color: rgb(24, 19, 19);
-
 }
 
 .content {
@@ -36,21 +36,16 @@ nav {
 	margin-right: auto;
 }
 
-.logo a {
-
-	font-style: italic;
-	margin-left: 20px;
-	font-weight: 600;
-	text-transform: uppercase;
-	font-size: 1.5rem;
-
+.logo img{
+	width: 50px;
+	padding: 15px 0;
 }
 
 .menu {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	margin-right: 20px;
+
 	height: 80px;
 }
 
@@ -399,24 +394,7 @@ article {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* GRID______________________________________________ */
-
 
 .containergrid {
 	height: 200px;
@@ -426,30 +404,81 @@ article {
 }
 
 
+@media screen and (max-width: 800px) {
 
-.grid {
-	border: 2px solid #9B1212;
-	color: #9B1212;
-	margin: 3px 3px;
-}
 
-.containergrid2 {
-	height: 200px;
-	display: grid;
-	grid-template-columns: 50px 50px auto;
-}
+	.navigation {
+		padding: 0 15px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 
-.containergrid3 {
-	height: 200px;
-	display: grid;
-	grid-template-columns: 30px 1fr 2fr;
-}
+	.logo img{
+		width: 30px;
+		margin-right: 20px;
+	}
 
-.containergrid3 {
-	height: 200px;
-	display: grid;
-	grid-template-columns: 30px 1fr 2fr;
-}
+	.menu {
+		margin: 0;
+		height: 20px;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	.menu a {
+		font-size: 12px;
+		margin: 0;
+		padding: 0;
+	}
+
+	h1 {
+		font-size: 32px;
+		margin: 60px 0;
+	}
+
+	article {
+		flex-wrap: wrap;
+		margin: 60px 0;
+	}
+
+	.rubrique{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	.texte {
+		width: 100%;
+		margin: 0;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+
+
+	.grid {
+		border: 2px solid #9B1212;
+		color: #9B1212;
+		margin: 3px 3px;
+	}
+
+	.containergrid2 {
+		height: 200px;
+		display: grid;
+		grid-template-columns: 50px 50px auto;
+	}
+
+    .containergrid3 {
+		height: 200px;
+		display: grid;
+		grid-template-columns: 30px 1fr 2fr;
+	}
+
+	.containergrid3 {
+		height: 200px;
+		display: grid;
+		grid-template-columns: 30px 1fr 2fr;
+	}
+
+
 
 
 
@@ -518,3 +547,25 @@ article {
 		}
 
 	}
+
+	.rubrique {
+		width: 100%;
+		margin: 0;
+		margin-top: 15px;
+	}
+
+	.rubrique:first-child {
+		margin-top: 0;
+	}
+
+	.categories {
+		flex-wrap: wrap;
+		margin: 0 15px;
+	}
+
+	.entree a {
+		padding-right: 15px;
+	}
+
+}
+
