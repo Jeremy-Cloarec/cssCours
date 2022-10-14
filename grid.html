@@ -30,8 +30,8 @@
         </div>
         <article>
             <div class="texte">
-                <h3>Display : grid ;</h3>
-                <p>grid-template-colmun : 50px 50px 120px;</p>
+                <h3>display : grid ;</h3>
+                <h3>grid-template-column : 50px 50px 120px;</h3>
                 <p></p>
             </div>
             <div class="container">
@@ -45,8 +45,7 @@
         </article>
         <article>
             <div class="texte">
-                <h3>Display : grid ;</h3>
-                <p>grid-template-colmun : 50px 50px auto;</p>
+                <h3>grid-template-column : 50px 50px auto;</h3>
                 <p>auto = les éléments occupent autant d'espace que possible</p>
             </div>
             <div class="container">
@@ -60,12 +59,40 @@
         </article>
         <article>
             <div class="texte">
-                <h3>Display : grid ;</h3>
-                <p>grid-template-colmun : 30px 1fr 2fr;</p>
+                <h3>grid-template-colmun : 30px 1fr 2fr;</h3>
                 <p>fr : unité fractionnaire, unité de mesure spécifique à grid</p>
             </div>
             <div class="container">
                 <div class="containergrid3">
+                    <div class="grid">1</div> 
+                    <div class="grid">2</div> 
+                    <div class="grid">3</div> 
+                    <div class="grid">4</div> 
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="texte">
+                <h3>grid-template-column : repeat(3, 1fr)</h3>
+                <p>repeat : outil de grid pour définir rapidement les colonnes</p>
+            </div>
+            <div class="container">
+                <div class="containergrid4">
+                    <div class="grid">1</div> 
+                    <div class="grid">2</div> 
+                    <div class="grid">3</div> 
+                    <div class="grid">4</div> 
+                </div>
+            </div>
+        </article>
+    </main>
+        <article>
+            <div class="texte">
+                <h3>grid-template : 50px 1fr / 150px 50px 1fr</h3>
+                <p>La propriété grid-template permet de définir les lignes et les colonnes de la grille sur une seule ligne. À gauche ligne, à droite colonne.   </p>
+            </div>
+            <div class="container">
+                <div class="containergrid5">
                     <div class="grid">1</div> 
                     <div class="grid">2</div> 
                     <div class="grid">3</div> 
