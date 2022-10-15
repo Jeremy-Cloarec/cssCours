@@ -507,6 +507,25 @@ article {
 
 
 
+.containergrid11 {
+	display: grid;
+	grid-template-areas: 
+	"item3 . item2"	
+	". item1 item1"; 	
+}
+
+.containergrid11 .item1{
+	grid-area:item1;
+}
+
+.containergrid11 .item2{
+	grid-area:item2;
+}
+
+.containergrid11 .item3{
+	grid-area:item3;
+}
+
 
 
 
