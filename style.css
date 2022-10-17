@@ -622,7 +622,7 @@ top:300px;
 	}
 
 	.logo img {
-		width: 30px;
+		width: 50px;
 		margin-right: 50px;
 	}
 
@@ -634,7 +634,7 @@ top:300px;
 	}
 
 	.menu a {
-		font-size: 16px;
+		font-size: 20px;
 		margin: 0;
 		padding: 0;
 	}
@@ -680,10 +680,7 @@ top:300px;
 		padding-right: 15px;
 	} 
 
-	article {
-		flex-wrap: wrap;
-		margin: 60px 0;
-	}
+
 
 	.texte {
 		width: 100%;
@@ -714,12 +711,14 @@ top:300px;
 @media screen and (max-width: 450px){
 	.navigation{
 		flex-direction: column;
+		padding: 30px 0 15px 0;
 	}
 	.logo img{
 		margin:0;
-		padding: 0;
-		padding-top: 30px;
+	
 	}
+
+
 
 }
 
