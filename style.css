@@ -247,8 +247,8 @@ article {
 
 .containerflex11 {
 	display: flex;
-	flex-direction: column;
-	align-items: stretch;
+	flex-direction: row;
+	align-items: end;
 	height: 200px;
 }
 
