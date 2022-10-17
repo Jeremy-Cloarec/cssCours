@@ -36,16 +36,26 @@ nav {
 	margin-right: auto;
 }
 
+.logo{
+	box-sizing: border-box;
+}
+
 .logo img {
 	width: 50px;
 	padding: 15px 0;
 }
 
+.logo img:hover{
+	transform: scale(1.1);
+	transition: 0.4s ease-out;
+}
+
+
+
 .menu {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-
 	height: 80px;
 }
 
@@ -53,10 +63,16 @@ nav {
 	list-style: none;
 }
 
+
 .entree a {
 	text-decoration: none;
 	padding: 0 15px;
 	font-weight: 600;
+	font-size: 20px;
+}
+
+.entree a:hover{
+	color: #9B1212;
 }
 
 h1 {
@@ -85,7 +101,10 @@ article {
 .categories {
 	display: flex;
 	justify-content: space-around;
-	margin-right: 20px;
+	margin: auto;
+	max-width: 1350px;
+	padding: 0 20px;
+	
 
 }
 
@@ -99,8 +118,17 @@ article {
 	justify-content: center;
 }
 
+.rubrique:first-child{
+	margin-left: 0;
+}
+
 .rubrique a {
 	color: #9B1212;
+}
+
+.rubrique h2:hover{
+	transform: scale(1.2);
+	transition: 0.3s;
 }
 
 
@@ -527,10 +555,61 @@ article {
 }
 
 
+/* position */
+
+.position{
+	border: 2px solid #9B1212;
+	color: #9B1212;
+	margin: 3px 3px;
+	width: 70px;
+	position: relative;
+}
+
+.containerPosition .un{
+	left:30px;
+}
+.containerPosition .deux{
+	left:60%;
+}
+
+.containerPosition .trois{
+	top:20px;
+	left: 100px;
+}
+.containerPosition .quatre{
+	bottom:60px;
+	left: 200px;
+}
+
+.containerWithout{
+	background-color: rgba(155, 18, 18, 0.1);
+	width: 60%;
+	height: 300px;
+}
+
+.containerPosition2{
+	position: relative;
+}
+.containerPosition2 .position{
+	position: absolute;
+}
 
 
+.containerPosition2 .un{
+	top: 50px;
+	}
+.containerPosition2 .deux{
+	left: 50%;
+	top:-15px;
+}
 
-
+.containerPosition2 .trois{
+	top:10px;
+	right: 0;
+}
+.containerPosition2 .quatre{
+top:300px;
+}
 
 
 
@@ -539,13 +618,12 @@ article {
 
 	.navigation {
 		padding: 0 15px;
-		flex-wrap: wrap;
 		justify-content: center;
 	}
 
 	.logo img {
 		width: 30px;
-		margin-right: 20px;
+		margin-right: 50px;
 	}
 
 	.menu {
@@ -556,7 +634,7 @@ article {
 	}
 
 	.menu a {
-		font-size: 12px;
+		font-size: 16px;
 		margin: 0;
 		padding: 0;
 	}
@@ -594,18 +672,13 @@ article {
 	
 	.categories {
 		flex-wrap: wrap;
-		margin: 0 15px;
+		margin: 0px;
+		
 	}
 	
 	.entree a {
 		padding-right: 15px;
 	} 
-
-}
-
-
-
-@media screen and (max-width: 800px) {
 
 	article {
 		flex-wrap: wrap;
@@ -623,6 +696,9 @@ article {
 	.container {
 		width: 100%;
 	}
+	.containerWithout{
+		width: 100%;
+	}
 
 	.texte h3 {
 		text-align: center;
@@ -630,6 +706,19 @@ article {
 
 	.texte p {
 		text-align: center;
+	}
+
+}
+
+
+@media screen and (max-width: 450px){
+	.navigation{
+		flex-direction: column;
+	}
+	.logo img{
+		margin:0;
+		padding: 0;
+		padding-top: 30px;
 	}
 
 }
